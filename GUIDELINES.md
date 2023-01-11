@@ -419,7 +419,7 @@ The correct form of how the above code should be written is as follows: "val hex
 
 In the case of functions, loops and conditional statements, the "{" should be placed on a new line after the decleration of the statements required, this improves the readability of the code as it keeps the opening and closing ({ and }) characters in line with each other.
 
-## Repitition
+## Repetition
 
 In the case of code that needs to be reused in multiple areas, rather create a function which performs the functionality of the code that needs to be reused. This makes it easily readable as readers will not wonder if the different code does the same thing or not as they both use the same function.
 
