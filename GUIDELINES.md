@@ -62,7 +62,9 @@ All variables should be declared before used. JavaScript does not require this, 
 
 The var statements should be the first statements in the function body.
 
-It is preferred that each variable be given its own line and comment. They should be listed in alphabetical order.
+It is preferred that each variable be given its own line. They should be listed in alphabetical order.
+
+Naming conventions should follow camelCase, with the first letter being lowercase. Use descriptive enough variable names that comments are not necessary. Go over the line limit if necessary
 
 ``` js
 var currentEntry, // currently selected table entry

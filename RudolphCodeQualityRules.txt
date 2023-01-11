@@ -2,19 +2,13 @@ Every if must have an else
 
 Every function must do something even if only throwing exceptions
 
-Good variable names (descriptive names)
-
 Conditionals and loops must have {}
 
 Good documentation (in-line or separate as necessary)
 
-Comment well
-
 Good readability (indentation and whitespace)
 
 Single responsibility makes code more self-explanatory
-
-Minimal nesting (Pyramid of doom)
 
 Tabs and spaces never mix (you can convert tabs to spaces)
 
