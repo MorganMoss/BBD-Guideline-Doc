@@ -403,4 +403,26 @@ The eval function is the most misused feature of JavaScript. Avoid it.
 
 eval has aliases. Do not use the Function constructor. Do not pass strings to setTimeout or setInterval.
 
+## Spacing for operations
+
+Spacing should be used between operands and operators. For example, for a line where simple arithmetic is used, instead of typing; "val x=a+b", rather type; "val x = a + b".
+
+This improves the readability of the code and reduces ambiguity when attempting to understand what the code is meant to do.
+
+## Parentheses for operations
+
+Parentheses should be used wherever compound statements are being used. For example, in a compound arithmetic operation such as: "val hexArea = (3 * Math.sqrt(3) * s * s / 2);", this could lead to ambiguous understanding of what the written code does, and could potentially lead to issues or erroneous results in some cases.
+
+The correct form of how the above code should be written is as follows: "val hexArea = ( (3 * Math.sqrt(3)) * (s * s) / 2);"
+
+## {} and Scope
+
+In the case of functions, loops and conditional statements, the "{" should be placed on a new line after the decleration of the statements required, this improves the readability of the code as it keeps the opening and closing ({ and }) characters in line with each other.
+
+## Repitition
+
+In the case of code that needs to be reused in multiple areas, rather create a function which performs the functionality of the code that needs to be reused. This makes it easily readable as readers will not wonder if the different code does the same thing or not as they both use the same function.
+
+This can also, in some cases, make it easier for updating or revision of the code, as you will only need to edit the code in one place.
+
 (forked from http://javascript.crockford.com/code.html)
