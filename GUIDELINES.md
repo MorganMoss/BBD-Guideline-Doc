@@ -384,3 +384,7 @@ The eval function is the most misused feature of JavaScript. Avoid it.
 eval has aliases. Do not use the Function constructor. Do not pass strings to setTimeout or setInterval.
 
 (forked from http://javascript.crockford.com/code.html)
+
+Line ending with semi-colons
+
+Absolute comparisons in conditional statements
