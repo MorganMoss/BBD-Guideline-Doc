@@ -64,7 +64,6 @@ The var statements should be the first statements in the function body.
 
 It is preferred that each variable be given its own line. They should be listed in alphabetical order.
 
-Naming conventions should follow camelCase, with the first letter being lowercase. Use descriptive enough variable names that comments are not necessary. Go over the line limit if necessary
 
 ``` js
 var currentEntry, // currently selected table entry
@@ -175,7 +174,7 @@ Names should be formed from the 26 upper and lower case letters (A .. Z, a .. z)
 
 Do not use _ (underbar) as the first character of a name. It is sometimes used to indicate privacy, but it does not actually provide privacy. If privacy is important, use the forms that provide private members. Avoid conventions that demonstrate a lack of competence.
 
-Most variables and functions should start with a lower case letter.
+Naming conventions should follow camelCase, with the first letter being lowercase in most cases. Use descriptive enough variable names that comments are not necessary. Go over the line limit if necessary
 
 Constructor functions which must be used with the new prefix should start with a capital letter. JavaScript issues neither a compile-time warning nor a run-time warning if a required new is omitted. Bad things can happen if new is not used, so the capitalization convention is the only defense we have.
 
