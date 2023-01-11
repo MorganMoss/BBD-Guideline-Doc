@@ -332,6 +332,8 @@ Blank spaces should be used in the following circumstances:
 
 A keyword followed by ( (left parenthesis) should be separated by a space.
 
+Never mix spaces and tabs.
+
 ``` js
 while (true) {
 ```
