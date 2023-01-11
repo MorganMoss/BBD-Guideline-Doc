@@ -22,6 +22,22 @@ JavaScript code should not be embedded in HTML files unless the code is specific
 
 The unit of indentation is four spaces. Use of tabs should be avoided because (as of this writing in the 21st Century) there still is not a standard for the placement of tabstops. The use of spaces can produce a larger filesize, but the size is not significant over local networks, and the difference is eliminated by minification.
 
+## Nesting
+
+Avoid deep nesting as much as possible, best practice is no more than three deep. If you find yourself nesting too deeply, try separate it into multiple functions.
+
+``` js
+// Pyramid of Doom!
+if ... {
+    for ... {
+        while ... {
+            if ... {
+            }
+        }
+    }
+}
+```
+
 ## Line Length
 
 Avoid lines longer than 80 characters. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. A break after an operator decreases the likelihood that a copy-paste error will be masked by semicolon insertion. The next line should be indented 8 spaces.
@@ -384,7 +400,3 @@ The eval function is the most misused feature of JavaScript. Avoid it.
 eval has aliases. Do not use the Function constructor. Do not pass strings to setTimeout or setInterval.
 
 (forked from http://javascript.crockford.com/code.html)
-
-Line ending with semi-colons
-
-Absolute comparisons in conditional statements
