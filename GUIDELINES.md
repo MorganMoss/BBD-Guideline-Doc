@@ -170,6 +170,8 @@ var collection = (function () {
 }());
 ```
 
+Curly braces in-line
+
 ## Names
 
 Names should be formed from the 26 upper and lower case letters (A .. Z, a .. z), the 10 digits (0 .. 9), and _ (underbar). Avoid use of international characters because they may not read well or be understood everywhere. Do not use $ (dollar sign) or \ (backslash) in names.
@@ -356,6 +358,8 @@ Use arrays when the member names would be sequential integers. Use objects when 
 
 Avoid the use of the comma operator except for very disciplined use in the control part of for statements. (This does not apply to the comma separator, which is used in object literals, array literals, var statements, and parameter lists.)
 
+End each element in array with a comma especially if each element is on its own line
+
 ## Block Scope
 
 In JavaScript blocks do not have scope. Only functions have scope. Do not use blocks except as required by the compound statements.
@@ -427,3 +431,15 @@ In the case of code that needs to be reused in multiple areas, rather create a f
 This can also, in some cases, make it easier for updating or revision of the code, as you will only need to edit the code in one place.
 
 (forked from http://javascript.crockford.com/code.html)
+
+
+## Code Structure
+
+End code lines with semi-colon
+
+Space between functions' blocks
+
+## Visual Studio Code Extensions
+
+Prettier/ any common code formatter
+
