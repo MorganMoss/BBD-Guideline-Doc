@@ -29,6 +29,3 @@ Unit tests should test a unit
 Non-flaky integration tests
 
 Don't leave commented code in the file, just delete it
-
-Use debuggers, don't write to files and logs unless someone is going to use it.
-
