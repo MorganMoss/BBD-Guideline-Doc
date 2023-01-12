@@ -86,7 +86,7 @@ Generally use line comments. Save block comments for formal documentation and fo
 
 All variables should be declared before used. JavaScript does not require this, but doing so makes the program easier to read and makes it easier to detect undeclared variables that may become implied globals. Implied global variables should never be used.
 
-The var statements should be the first statements in the function body.
+The let statements should be the first statements in the function body.
 
 It is preferred that each variable be given its own line. They should be listed in alphabetical order.
 
@@ -167,18 +167,18 @@ Use of global functions should be minimized.
 When a function is to be invoked immediately, the entire invocation expression should be wrapped in parents so that it is clear that the value being produced is the result of the function and not the function itself.
 
 ``` js
-var collection = (function () {
-    var keys = [], values = [];
+let collection = (function () {
+    let keys = [], values = [];
 
     return {
         get: function (key) {
-            var at = keys.indexOf(key);
+            let at = keys.indexOf(key);
             if (at >= 0) {
                 return values[at];
             }
         },
         set: function (key, value) {
-            var at = keys.indexOf(key);
+            let at = keys.indexOf(key);
             if (at < 0) {
                 at = keys.length;
             }
@@ -186,7 +186,7 @@ var collection = (function () {
             values[at] = value;
         },
         remove: function (key) {
-            var at = keys.indexOf(key);
+            let at = keys.indexOf(key);
             if (at >= 0) {
                 keys.splice(at, 1);
                 values.splice(at, 1);
@@ -381,7 +381,7 @@ Use arrays when the member names would be sequential integers. Use objects when 
 
 ## , (comma) Operator
 
-Avoid the use of the comma operator except for very disciplined use in the control part of for statements. (This does not apply to the comma separator, which is used in object literals, array literals, var statements, and parameter lists.)
+Avoid the use of the comma operator except for very disciplined use in the control part of for statements. (This does not apply to the comma separator, which is used in object literals, array literals, let statements, and parameter lists.)
 
 End each element in array with a comma especially if each element is on its own line
 
