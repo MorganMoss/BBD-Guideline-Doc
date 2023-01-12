@@ -447,7 +447,7 @@ The correct form of how the above code should be written is as follows: "val hex
 
 ## {} and Scope
 
-In the case of functions, loops and conditional statements, the "{" should be placed on a new line after the decleration of the statements required, this improves the readability of the code as it keeps the opening and closing ({ and }) characters in line with each other.
+In the case of functions, loops and conditional statements, the "{" should be placed on the same line as the declaration of the statements required, this removes unnecessary lines and makes the code neater and more compact.
 
 ## Repetition
 
@@ -467,4 +467,9 @@ Space between functions' blocks
 ## Visual Studio Code Extensions
 
 Prettier as a common code formatter
+
+## Modularize — one function per task
+This is a general programming best practice — making sure that you create functions that fulfill one job at a time makes it easy for other developers to debug and change your code without having to scan through all the code to work out what code block performs what function.
+
+This also applies to creating helper functions for common tasks. If you find yourself doing the same thing in several different functions then it is a good idea to create a more generic helper function instead, and reuse that functionality where it is needed.
 
