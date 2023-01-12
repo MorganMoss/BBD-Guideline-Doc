@@ -2,16 +2,6 @@ Every if must have an else
 
 Every function must do something even if only throwing exceptions
 
-Conditionals and loops must have {}
-
-Good documentation (in-line or separate as necessary)
-
-Good readability (indentation and whitespace)
-
-Single responsibility makes code more self-explanatory
-
-Tabs and spaces never mix (you can convert tabs to spaces)
-
 Longer more understandable is better than short complex code, unless performance is critical.
 
 Rudolph likes 1000000000000 unique exceptions over generic exceptions with custom messages
@@ -39,6 +29,3 @@ Unit tests should test a unit
 Non-flaky integration tests
 
 Don't leave commented code in the file, just delete it
-
-Use debuggers, don't write to files and logs unless someone is going to use it.
-

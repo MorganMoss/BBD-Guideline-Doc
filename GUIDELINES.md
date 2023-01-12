@@ -1,4 +1,5 @@
 # JavaScript Coding Guidelines
+Based off: https://gist.github.com/antonrogov/1216380/21800f463af3d3a98e98083c4bc109e44f981ef4
 
 This is a set of coding conventions and rules for use in JavaScript programming. It is inspired by the Sun document Code Conventions for the Java Programming Language. It is heavily modified of course because JavaScript is not Java.
 
@@ -40,7 +41,7 @@ if ... {
 
 ## Line Length
 
-Avoid lines longer than 80 characters. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. A break after an operator decreases the likelihood that a copy-paste error will be masked by semicolon insertion. The next line should be indented 8 spaces.
+Avoid lines longer than 120 characters. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. A break after an operator decreases the likelihood that a copy-paste error will be masked by semicolon insertion. The next line should be indented 8 spaces.
 
 ## Comments
 
@@ -197,6 +198,8 @@ var collection = (function () {
 
 Curly braces in-line
 
+And ensure methods have a single responsibility for more self-explanatory code.
+
 ## Names
 
 Names should be formed from the 26 upper and lower case letters (A .. Z, a .. z), the 10 digits (0 .. 9), and _ (underbar). Avoid use of international characters because they may not read well or be understood everywhere. Do not use $ (dollar sign) or \ (backslash) in names.
@@ -238,9 +241,6 @@ A return statement with a value should not use ( ) (parentheses) around the valu
 The if class of statements should have the following form:
 
 ``` js
-if (condition) {
-    statements
-}
 
 if (condition) {
     statements
@@ -473,3 +473,7 @@ This is a general programming best practice — making sure that you create func
 
 This also applies to creating helper functions for common tasks. If you find yourself doing the same thing in several different functions then it is a good idea to create a more generic helper function instead, and reuse that functionality where it is needed.
 
+## Debugging
+
+Printing to console is prohibited. Use logs if absolutely necessary.
+Attach a debugger if you need to debug code. 
