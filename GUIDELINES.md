@@ -466,5 +466,5 @@ Space between functions' blocks
 
 ## Visual Studio Code Extensions
 
-Prettier/ any common code formatter
+Prettier as a common code formatter
 
