@@ -82,6 +82,8 @@ All functions should be declared before they are used. Inner functions should fo
 
 There should be no space between the name of a function and the ( (left parenthesis) of its parameter list. There should be one space between the ) (right parenthesis) and the { (left curly brace) that begins the statement body. The body itself is indented four spaces. The } (right curly brace) is aligned with the line containing the beginning of the declaration of the function.
 
+Naming conventions should follow camelCase, with the first letter being lowercase. Use descriptive enough method names that reading documentation is as optional as it needs to be. Go over the line limit if necessary
+
 ``` js
 function outer(c, d) {
     var e = c * d;
