@@ -64,7 +64,6 @@ The var statements should be the first statements in the function body.
 
 It is preferred that each variable be given its own line. They should be listed in alphabetical order.
 
-Naming conventions should follow camelCase, with the first letter being lowercase. Use descriptive enough variable names that comments are not necessary. Go over the line limit if necessary
 
 ``` js
 var currentEntry, // currently selected table entry
@@ -177,7 +176,7 @@ Names should be formed from the 26 upper and lower case letters (A .. Z, a .. z)
 
 Do not use _ (underbar) as the first character of a name. It is sometimes used to indicate privacy, but it does not actually provide privacy. If privacy is important, use the forms that provide private members. Avoid conventions that demonstrate a lack of competence.
 
-Most variables and functions should start with a lower case letter.
+Naming conventions should follow camelCase, with the first letter being lowercase in most cases. Use descriptive enough variable names that comments are not necessary. Go over the line limit if necessary
 
 Constructor functions which must be used with the new prefix should start with a capital letter. JavaScript issues neither a compile-time warning nor a run-time warning if a required new is omitted. Bad things can happen if new is not used, so the capitalization convention is the only defense we have.
 
@@ -334,6 +333,8 @@ Blank spaces should be used in the following circumstances:
 
 A keyword followed by ( (left parenthesis) should be separated by a space.
 
+Never mix spaces and tabs.
+
 ``` js
 while (true) {
 ```
@@ -402,5 +403,27 @@ so that the + + is not misread as ++.
 The eval function is the most misused feature of JavaScript. Avoid it.
 
 eval has aliases. Do not use the Function constructor. Do not pass strings to setTimeout or setInterval.
+
+## Spacing for operations
+
+Spacing should be used between operands and operators. For example, for a line where simple arithmetic is used, instead of typing; "val x=a+b", rather type; "val x = a + b".
+
+This improves the readability of the code and reduces ambiguity when attempting to understand what the code is meant to do.
+
+## Parentheses for operations
+
+Parentheses should be used wherever compound statements are being used. For example, in a compound arithmetic operation such as: "val hexArea = (3 * Math.sqrt(3) * s * s / 2);", this could lead to ambiguous understanding of what the written code does, and could potentially lead to issues or erroneous results in some cases.
+
+The correct form of how the above code should be written is as follows: "val hexArea = ( (3 * Math.sqrt(3)) * (s * s) / 2);"
+
+## {} and Scope
+
+In the case of functions, loops and conditional statements, the "{" should be placed on a new line after the decleration of the statements required, this improves the readability of the code as it keeps the opening and closing ({ and }) characters in line with each other.
+
+## Repetition
+
+In the case of code that needs to be reused in multiple areas, rather create a function which performs the functionality of the code that needs to be reused. This makes it easily readable as readers will not wonder if the different code does the same thing or not as they both use the same function.
+
+This can also, in some cases, make it easier for updating or revision of the code, as you will only need to edit the code in one place.
 
 (forked from http://javascript.crockford.com/code.html)
