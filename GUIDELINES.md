@@ -197,6 +197,8 @@ var collection = (function () {
 
 Curly braces in-line
 
+And ensure methods have a single responsibility for more self-explanatory code.
+
 ## Names
 
 Names should be formed from the 26 upper and lower case letters (A .. Z, a .. z), the 10 digits (0 .. 9), and _ (underbar). Avoid use of international characters because they may not read well or be understood everywhere. Do not use $ (dollar sign) or \ (backslash) in names.
@@ -468,3 +470,7 @@ Space between functions' blocks
 
 Prettier/ any common code formatter
 
+## Debugging
+
+Printing to console is prohibited. Use logs if absolutely necessary.
+Attach a debugger if you need to debug code. 
