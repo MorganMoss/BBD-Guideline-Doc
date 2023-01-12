@@ -92,7 +92,7 @@ It is preferred that each variable be given its own line. They should be listed 
 
 
 ``` js
-var currentEntry, // currently selected table entry
+let currentEntry, // currently selected table entry
     level = 0,    // indentation level
     size;         // size of table
 ```
@@ -103,7 +103,7 @@ Use of global variables should be minimized. Implied global variables should nev
 
 ## Function Declarations
 
-All functions should be declared before they are used. Inner functions should follow the var statement. This helps make it clear what variables are included in its scope.
+All functions should be declared before they are used. Inner functions should follow the let statement. This helps make it clear what variables are included in its scope.
 
 There should be no space between the name of a function and the ( (left parenthesis) of its parameter list. There should be one space between the ) (right parenthesis) and the { (left curly brace) that begins the statement body. The body itself is indented four spaces. The } (right curly brace) is aligned with the line containing the beginning of the declaration of the function.
 
@@ -111,7 +111,7 @@ Naming conventions should follow camelCase, with the first letter being lowercas
 
 ``` js
 function outer(c, d) {
-    var e = c * d;
+    let e = c * d;
 
     function inner(a, b) {
         return (e * a) + b;
@@ -125,11 +125,11 @@ This convention works well with JavaScript because in JavaScript, functions and 
 
 ``` js
 function getElementsByClassName(className) {
-    var results = [];
+    let results = [];
     walkTheDOM(document.body, function (node) {
-        var a;                  // array of class names
-        var c = node.className; // the node's classname
-        var i;                  // loop counter
+        let a;                  // array of class names
+        let c = node.className; // the node's classname
+        let i;                  // loop counter
 
        // If the node has a class name, then split it into a list of simple names.
        // If any of them match the requested name, then append the node to the set of results.
