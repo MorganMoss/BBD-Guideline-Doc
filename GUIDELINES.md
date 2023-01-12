@@ -447,7 +447,7 @@ The correct form of how the above code should be written is as follows: "val hex
 
 ## {} and Scope
 
-In the case of functions, loops and conditional statements, the "{" should be placed on a new line after the decleration of the statements required, this improves the readability of the code as it keeps the opening and closing ({ and }) characters in line with each other.
+In the case of functions, loops and conditional statements, the "{" should be placed on the same line as the declaration of the statements required, this removes unnecessary lines and makes the code neater and more compact.
 
 ## Repetition
 
