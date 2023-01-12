@@ -238,9 +238,6 @@ A return statement with a value should not use ( ) (parentheses) around the valu
 The if class of statements should have the following form:
 
 ``` js
-if (condition) {
-    statements
-}
 
 if (condition) {
     statements
