@@ -56,6 +56,31 @@ i = 0; // Set i to zero.
 
 Generally use line comments. Save block comments for formal documentation and for commenting out.
 
+``` js
+  /**
+   * Reduces a sequence of names to initials.
+   * @param  {String} name  Space Delimited sequence of names.
+   * @param  {String} sep   A period separating the initials.
+   * @param  {String} trail A period ending the initials.
+   * @param  {String} hyph  A hypen separating double names.
+   * @return {String}       Properly formatted initials.
+   */
+  function makeInits(name, sep, trail, hyph) {
+    function splitBySpace(nm) {
+      return nm.trim().split(/\s+/).map(function(x) {return x[0]}).join(sep).toUpperCase();
+    }
+    return name.split(hyph).map(splitBySpace).join(hyph) + trail;
+  }
+  /**
+   * Reduces a sequence of names to initials.
+   * @param  {String} name Space delimited sequence of names.
+   * @return {String}      Properly formatted initials.
+   */
+  function makeInitials(name) {
+    return makeInits(name, '.', '.', '-');
+  }
+```
+
 ## Variable Declarations
 
 All variables should be declared before used. JavaScript does not require this, but doing so makes the program easier to read and makes it easier to detect undeclared variables that may become implied globals. Implied global variables should never be used.
@@ -169,6 +194,8 @@ var collection = (function () {
     };
 }());
 ```
+
+Curly braces in-line
 
 ## Names
 
@@ -356,6 +383,8 @@ Use arrays when the member names would be sequential integers. Use objects when 
 
 Avoid the use of the comma operator except for very disciplined use in the control part of for statements. (This does not apply to the comma separator, which is used in object literals, array literals, var statements, and parameter lists.)
 
+End each element in array with a comma especially if each element is on its own line
+
 ## Block Scope
 
 In JavaScript blocks do not have scope. Only functions have scope. Do not use blocks except as required by the compound statements.
@@ -427,3 +456,15 @@ In the case of code that needs to be reused in multiple areas, rather create a f
 This can also, in some cases, make it easier for updating or revision of the code, as you will only need to edit the code in one place.
 
 (forked from http://javascript.crockford.com/code.html)
+
+
+## Code Structure
+
+End code lines with semi-colon
+
+Space between functions' blocks
+
+## Visual Studio Code Extensions
+
+Prettier/ any common code formatter
+
