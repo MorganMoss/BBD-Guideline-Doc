@@ -240,9 +240,6 @@ A return statement with a value should not use ( ) (parentheses) around the valu
 The if class of statements should have the following form:
 
 ``` js
-if (condition) {
-    statements
-}
 
 if (condition) {
     statements
@@ -468,7 +465,12 @@ Space between functions' blocks
 
 ## Visual Studio Code Extensions
 
-Prettier/ any common code formatter
+Prettier as a common code formatter
+
+## Modularize — one function per task
+This is a general programming best practice — making sure that you create functions that fulfill one job at a time makes it easy for other developers to debug and change your code without having to scan through all the code to work out what code block performs what function.
+
+This also applies to creating helper functions for common tasks. If you find yourself doing the same thing in several different functions then it is a good idea to create a more generic helper function instead, and reuse that functionality where it is needed.
 
 ## Debugging
 
