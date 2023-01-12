@@ -44,7 +44,7 @@ Avoid lines longer than 80 characters. When a statement will not fit on a single
 
 ## Comments
 
-Be generous with comments. It is useful to leave information that will be read at a later time by people (possibly yourself) who will need to understand what you have done. The comments should be well-written and clear, just like the code they are annotating. An occasional nugget of humor might be appreciated. Frustrations and resentments will not.
+It is useful to leave comments that will be read at a later time by people (possibly yourself) who will need to understand what you have done. The comments should be well-written and clear, just like the code they are annotating. An occasional nugget of humor might be appreciated. Frustrations and resentments will not.
 
 It is important that comments be kept up-to-date. Erroneous comments can make programs even harder to read and understand.
 
